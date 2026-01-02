@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Games Collection</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>🕹️ RETRO ARCADE 🕹️</h1>
+        <p>Classic games from the golden age</p>
+    </header>
+
+    <main class="games-grid">
+        <div class="game-card" onclick="openGame('snake')">
+            <div class="game-icon">🐍</div>
+            <h3>SNAKE</h3>
+            <p>Eat, grow, survive</p>
+        </div>
+        
+        <div class="game-card" onclick="openGame('pong')">
+            <div class="game-icon">🏓</div>
+            <h3>PONG</h3>
+            <p>The original video game</p>
+        </div>
+        
+        <div class="game-card" onclick="openGame('tetris')">
+            <div class="game-icon">🧩</div>
+            <h3>TETRIS</h3>
+            <p>Russian puzzle classic</p>
+        </div>
+        
+        <div class="game-card" onclick="openGame('breakout')">
+            <div class="game-icon">🧱</div>
+            <h3>BREAKOUT</h3>
+            <p>Atari's brick-busting hit</p>
+        </div>
+        
+        <div class="game-card" onclick="openGame('memory')">
+            <div class="game-icon">🧠</div>
+            <h3>MEMORY</h3>
+            <p>Match the pairs</p>
+        </div>
+        
+        <div class="game-card" onclick="openGame('asteroids')">
+            <div class="game-icon">🚀</div>
+            <h3>ASTEROIDS</h3>
+            <p>Space shooter classic</p>
+        </div>
+        
+        <div class="game-card" onclick="openGame('invaders')">
+            <div class="game-icon">🏰</div>
+            <h3>TOWER CLIMBER</h3>
+            <p>Ascend the endless tower</p>
+        </div>
+    </main>
+    
+    <footer>
+        <p>🎮 EST. 1972 • CLASSIC ARCADE GAMES • PIXEL PERFECT 🎮</p>
+    </footer>
+
+    <div id="gameModal" class="game-modal">
+        <div class="modal-content">
+            <button class="close-btn" onclick="closeGame()">&times;</button>
+            <button class="fullscreen-btn" onclick="toggleFullscreen()">⛶</button>
+            <iframe id="gameFrame" src="" frameborder="0"></iframe>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
