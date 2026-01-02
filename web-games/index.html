@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Games Collection</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Web Games Collection</h1>
+        <p>A collection of original browser games</p>
+    </header>
+
+    <main class="games-grid">
+        <div class="game-card" onclick="openGame('snake')">
+            <div class="game-icon">🐍</div>
+            <h3>Snake Game</h3>
+            <p>Classic snake game with modern twist</p>
+        </div>
+        
+        <div class="game-card" onclick="openGame('memory')">
+            <div class="game-icon">🧠</div>
+            <h3>Memory Match</h3>
+            <p>Test your memory with card matching</p>
+        </div>
+        
+        <div class="game-card" onclick="openGame('pong')">
+            <div class="game-icon">🏓</div>
+            <h3>Pong</h3>
+            <p>Retro paddle ball game</p>
+        </div>
+        
+        <div class="game-card" onclick="openGame('tetris')">
+            <div class="game-icon">🧩</div>
+            <h3>Block Drop</h3>
+            <p>Falling blocks puzzle game</p>
+        </div>
+        
+        <div class="game-card" onclick="openGame('clicker')">
+            <div class="game-icon">👆</div>
+            <h3>Click Frenzy</h3>
+            <p>Addictive clicking and upgrade game</p>
+        </div>
+        
+        <div class="game-card" onclick="openGame('breakout')">
+            <div class="game-icon">🧱</div>
+            <h3>Brick Breaker</h3>
+            <p>Classic breakout with colorful bricks</p>
+        </div>
+        
+        <div class="game-card coming-soon">
+            <div class="game-icon">🚀</div>
+            <h3>More Games</h3>
+            <p>Coming soon...</p>
+        </div>
+    </main>
+    
+    <footer>
+        <p>Made with ❤️ for fun • Inspired by neal.fun</p>
+    </footer>
+
+    <div id="gameModal" class="game-modal">
+        <div class="modal-content">
+            <button class="close-btn" onclick="closeGame()">&times;</button>
+            <iframe id="gameFrame" src="" frameborder="0"></iframe>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
